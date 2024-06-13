@@ -37,6 +37,8 @@ const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
               onClick={() => onSelectGenre(genre)}
               fontSize="lg"
               variant="link"
+              whiteSpace="normal" // This will allow the text to wrap to the next line
+              textAlign="left" // Align text to the left for better readability
             >
               {genre.name}
             </Button>
